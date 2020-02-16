@@ -3,8 +3,9 @@
 利用这个cookie就可以免密完成登录打卡了。同时使用crontab来设置定时执行脚本即可。
 ```
 crontab -u [user_name]
-crontab -e #进入vim界面
-00 11 * * * ~/shell-script/daka.sh #每天11点执行~/shell-script/daka.sh
+crontab -e                          #进入vim界面
+00 11 * * * ~/shell-script/daka.sh  #每天11点执行~/shell-script/daka.sh
+crontab -l                          #看看定时打卡是不是在列表里
 ```
 
 ### find.sh
