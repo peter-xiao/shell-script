@@ -1,7 +1,7 @@
 ### daka.sh
 这个脚本是用来给zju-health打卡的，原理很简单，就是利用cookie。需要先在网页端完成一次手动的打卡，拿到cookie即可，
-利用这个cookie就可以免密完成登录打卡了。理论上来说把cookie放到仓库是很危险的行为，但是这只是个用来打卡的cookie，
-所以大家就算拿到了也只是帮我打卡了。同时使用crontab来设置定时执行脚本即可。
+利用这个cookie就可以免密完成登录打卡了。cookie是很危险的东西，知道了cookie和使用这个cookie的网站，一旦涉及到账户
+就可以免密登入对应账号的管理界面篡改数据，造成严重影响。同时使用crontab来设置定时执行脚本即可。
 ```
 crontab -u [user_name]
 crontab -e                          #进入vim界面
